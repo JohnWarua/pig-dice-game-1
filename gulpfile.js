@@ -40,7 +40,6 @@ gulp.task("styles", function() {
     .pipe(autoprefixer())
     .pipe(cleanCSS({compatibility: "ie8"}))
     .pipe(cleanCSS({level: "2"}))
-    .pipe(cleanCSS({format: "keep-breaks"}))
     .pipe(sourcemaps.write())
     .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("public/css/"))

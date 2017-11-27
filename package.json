@@ -1,15 +1,12 @@
 {
-  "name": "dom_color_game",
+  "name": "pig_dice_game",
   "version": "1.0.0",
-  "description": "DOM Color Game",
+  "description": "Pig Dice Game",
   "main": "public/js/app.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Asjas/DOM-pig-game.git"
-  },
+  "repository": "https://github.com/Asjas/pig-dice-game.git",
   "author": "A-J Roos",
   "licenses": [
     {
@@ -18,9 +15,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/Asjas/DOM-pig-game.git/issues"
+    "url": "https://github.com/Asjas/pig-dice-game.git/issues"
   },
-  "homepage": "https://github.com/Asjas/DOM-pig-game.git#readme",
+  "homepage": "https://github.com/Asjas/pig-dice-game.git#readme",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",
