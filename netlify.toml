@@ -4,10 +4,10 @@ for = "/*"
 
 [headers.values]
 
-Content-Security-Policy = "frame-ancestors pig-dice-game.netflify.com; always"
+Content-Security-Policy = "frame-ancestors pig-dice-game.netflify.com"
 Referrer-Policy = "strict-origin"
-Strict-Transport-Security = "max-age=31536000; includeSubdomains always"
-X-Content-Type-Options = "nosniff always"
+Strict-Transport-Security = "max-age=31536000"
+X-Content-Type-Options = "nosniff"
 X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
 proxy_hide_header = "X-Powered-By"
