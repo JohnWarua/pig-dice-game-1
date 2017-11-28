@@ -15,5 +15,5 @@ proxy_hide_header = "X-Powered-By"
 
 [build.environment]
 
-NODE_VERSION = "6"
+NODE_VERSION = "7"
 YARN_VERSION = "1.3.2"
