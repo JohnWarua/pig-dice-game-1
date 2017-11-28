@@ -1,8 +1,8 @@
-# Pig (Dice Game)
+## Pig (Dice Game)
 
-## This is a Dice Game called Pig
+### This is a Dice Game called Pig
 
-You can read more about this game [here](https://en.wikipedia.org/wiki/Pig_(dice_game))
+You can read more about this game on [wikipedia](https://en.wikipedia.org/wiki/Pig_dice_game)
 
 ![Screenshot of dice game](https://github.com/Asjas/pig-dice-game/blob/master/public/dice_background.webp "Pig (Dice Game)")
 
