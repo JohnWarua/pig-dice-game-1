@@ -217,3 +217,11 @@ label {
   font-weight: 300;
   color: #4dc6eb;
 }
+
+footer {
+  bottom: 0;
+  color: #FFF;
+  left: 42%;
+  margin-bottom: 5px;
+  position: absolute;
+}
