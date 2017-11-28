@@ -14,7 +14,7 @@
   <body>
     <div class="wrapper clearfix">
       <div class="player-0-panel active">
-        <div class="player-name" id="name-0"><i class="icon ion-ios-game-controller-b-outline"></i>Player 1</div>
+        <div class="player-name" id="name-0">Player 1</div>
         <div class="player-score" id="score-0">43</div>
           <div class="player-current-box">
             <div class="player-current-label">Current</div>
@@ -39,5 +39,17 @@
     </div>
     <!-- Application JavaScript file -->    
     <script src="public/js/app.min.js"></script>
+    <footer>
+      <p>Copyright © A-J Roos <span id="year"></span>. All Rights Reserved.</p>
+    </footer>
+    <script>
+    (function setYear () {
+      let today = new Date();
+      let year = today.getFullYear();
+
+      document.getElementById("year").textContent = year;
+    })();
+    
+    </script>
   </body>
 </html>
