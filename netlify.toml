@@ -11,3 +11,9 @@ X-Content-Type-Options = "nosniff"
 X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
 proxy_hide_header = "X-Powered-By"
+
+
+[build.environment]
+
+NODE_VERSION = "8"
+YARN_VERSION = "0.28.4"
