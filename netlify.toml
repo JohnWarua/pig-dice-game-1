@@ -17,3 +17,9 @@ proxy_hide_header = "X-Powered-By"
 
 NODE_VERSION = "8"
 YARN_VERSION = "0.28.4"
+
+[[redirects]]
+from = "http://pig-dice-game.netlify.com"
+to = "https://pig-dice-game.netlify.com:443"
+status = 301
+force = false
