@@ -7,7 +7,6 @@ const gulp = require("gulp");
 const imagemin = require("gulp-imagemin");
 const imageminJpegRecompress = require("imagemin-jpeg-recompress");
 const imageminPngquant = require("imagemin-pngquant");
-const imageminWebp = require("imagemin-webp");
 const livereload = require("gulp-livereload");
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
@@ -25,12 +24,12 @@ gulp.task("reload-html", function() {
 gulp.task("styles", function() {
   return gulp.src("src/scss/*.scss")
     .pipe(sourcemaps.init())
-    .pipe(sass({ style: "expanded" }))
     .pipe(plumber(function (err) {
       console.log("Styles Task Error");
       console.log(err);
       this.emit("end");
     }))
+    .pipe(sass({ style: "expanded" }))
     .pipe(cssbeautify({
       indent: "  ",
       openbrace: "end-of-line",
@@ -82,8 +81,7 @@ gulp.task("image-minify", function() {
         imagemin.optipng(),
         imagemin.svgo(),
         imageminPngquant(),
-        imageminJpegRecompress(),
-        imageminWebp()
+        imageminJpegRecompress()
       ]
     ))
     .pipe(gulp.dest("public/images/"))
