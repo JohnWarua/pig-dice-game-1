@@ -40,8 +40,12 @@ gulp.task("styles", function() {
     .pipe(autoprefixer())
     .pipe(cleanCSS({compatibility: "ie8"}))
     .pipe(cleanCSS({level: "2"}))
-    .pipe(sourcemaps.write())
     .pipe(rename({suffix: ".min"}))
+    .pipe(sourcemaps.write("../css/", {
+      sourceMappingURL: function(file) {
+        return file.relative + ".map";
+      }
+    }))
     .pipe(gulp.dest("public/css/"))
     .pipe(livereload());
 });
@@ -59,8 +63,12 @@ gulp.task("minify-js", function () {
       presets: ["es2015"]
     }))
     .pipe(uglify())
-    .pipe(sourcemaps.write())
     .pipe(rename({suffix: ".min"}))
+    .pipe(sourcemaps.write("../js/", {
+      sourceMappingURL: function(file) {
+        return file.relative + ".map";
+      }
+    }))
     .pipe(gulp.dest("public/js/"))
     .pipe(livereload());
 });
