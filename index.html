@@ -1,82 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="description" content="This is a Dice Game called PIG">
-    <meta name="author" content="A-J Roos">
-    <title>Pig Dice Game</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/public/favicons/manifest.json">
-    <meta name="msapplication-config" content="/public/favicons/browserconfig.xml">
-    <link rel="mask-icon" href="/public/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="This is a Dice Game called PIG">
+  <meta name="author" content="A-J Roos">
+  <title>Pig Dice Game</title>
 
-    <meta property="og:image" content="/public/og-image.jpg">
-    <meta property="og:image:height" content="489">
-    <meta property="og:image:width" content="933">
-    <meta property="og:title" content="Dice Game (Pig)">
-    <meta property="og:description" content="This is a &quot;Random Dice&quot; game called Pig.">
-    <meta property="og:url" content="https://pig-dice-game.netlify.com/">
-    <meta property="og:type" content="website">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/public/favicons/manifest.json">
+  <meta name="msapplication-config" content="/public/favicons/browserconfig.xml">
+  <link rel="mask-icon" href="/public/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="https://pig-dice-game.netlify.com">
-    <meta name="twitter:title" content="Dice Game (Pig)">
-    <meta name="twitter:description" content="This is a &quot;Random Dice&quot; game called Pig.">
-    <meta name="twitter:site" content="@asjasroos">
-    <meta name="twitter:creator" content="@asjasroos">
+  <meta property="og:image" content="/public/og-image.jpg">
+  <meta property="og:image:height" content="489">
+  <meta property="og:image:width" content="933">
+  <meta property="og:title" content="Dice Game (Pig)">
+  <meta property="og:description" content="This is a &quot;Random Dice&quot; game called Pig.">
+  <meta property="og:url" content="https://pig-dice-game.netlify.com/">
+  <meta property="og:type" content="website">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
-    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-    <link type="text/css" rel="stylesheet" href="public/css/reboot.min.css"> 
-    <link type="text/css" rel="stylesheet" href="public/css/style.min.css">  
-    <!--[if lt IE 9]>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://pig-dice-game.netlify.com">
+  <meta name="twitter:title" content="Dice Game (Pig)">
+  <meta name="twitter:description" content="This is a &quot;Random Dice&quot; game called Pig.">
+  <meta name="twitter:site" content="@asjasroos">
+  <meta name="twitter:creator" content="@asjasroos">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+  <link type="text/css" rel="stylesheet" href="public/css/reboot.min.css">
+  <link type="text/css" rel="stylesheet" href="public/css/style.min.css">
+  <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper clearfix">
-      <div class="player-0-panel active">
-        <div class="player-name" id="name-0">Player 1</div>
-        <div class="player-score" id="score-0">43</div>
-          <div class="player-current-box">
-            <div class="player-current-label">Current</div>
-            <div class="player-current-score" id="current-0">11</div>
-          </div>
-      </div>        
-      <div class="player-1-panel">
-        <div class="player-name" id="name-1">Player 2</div>
-        <div class="player-score" id="score-1">72</div>
-          <div class="player-current-box">
-            <div class="player-current-label">Current</div>
-            <div class="player-current-score" id="current-1">0</div>
-          </div>
+</head>
+
+<body>
+  <div class="wrapper clearfix">
+    <div class="player-0-panel active">
+      <div class="player-name" id="name-0">Player 1</div>
+      <div class="player-score" id="score-0">43</div>
+      <div class="player-current-box">
+        <div class="player-current-label">Current</div>
+        <div class="player-current-score" id="current-0">11</div>
       </div>
-      <button class="btn-new"><i class="ion-ios-game-controller-b-outline"></i>New game</button>
-      <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
-      <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
-      <label for="winning-score">Winning Score</label>
-      <input class="input-score" id="winning-score" type="number" min="1" max="3000">
-      <img src="public/images/dice-1.jpg" alt="Dice" class="dice1">
-      <img src="public/images/dice-2.jpg" alt="Dice" class="dice2">
     </div>
-    <!-- Application JavaScript file -->    
-    <script src="public/js/app.min.js"></script>
-    <footer>
-      <p>Copyright © A-J Roos <span id="year"></span>. All Rights Reserved.</p>
-    </footer>
-    <script>
-    (function setYear () {
+    <div class="player-1-panel">
+      <div class="player-name" id="name-1">Player 2</div>
+      <div class="player-score" id="score-1">72</div>
+      <div class="player-current-box">
+        <div class="player-current-label">Current</div>
+        <div class="player-current-score" id="current-1">0</div>
+      </div>
+    </div>
+    <button class="btn-new">
+      <i class="ion-ios-game-controller-b-outline"></i>New game</button>
+    <button class="btn-roll">
+      <i class="ion-ios-loop"></i>Roll dice</button>
+    <button class="btn-hold">
+      <i class="ion-ios-download-outline"></i>Hold</button>
+    <label for="winning-score">Winning Score</label>
+    <input class="input-score" id="winning-score" type="number" min="1" max="3000">
+    <img src="public/images/dice-1.png" alt="Dice" class="dice1">
+    <img src="public/images/dice-2.png" alt="Dice" class="dice2">
+  </div>
+  <!-- Application JavaScript file -->
+  <script src="public/js/app.min.js"></script>
+  <footer>
+    <p>Copyright © A-J Roos
+      <span id="year"></span>. All Rights Reserved.</p>
+  </footer>
+  <script>
+    (function setYear() {
       let today = new Date();
       let year = today.getFullYear();
 
       document.getElementById("year").textContent = year;
     })();
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
