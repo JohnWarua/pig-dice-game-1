@@ -1,10 +1,10 @@
-var StaticServer = require("static-server");
+const StaticServer = require('static-server');
 
-var server = new StaticServer({
-  rootPath: ".",
-  port: 3000
+const server = new StaticServer({
+  rootPath: '.',
+  port: 3000,
 });
 
-server.start(function () {
-  console.log("Server started on port " + server.port);
+server.start(() => {
+  console.log(`Server started on port ${server.port}`);
 });

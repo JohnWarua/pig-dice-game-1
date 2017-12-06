@@ -189,7 +189,7 @@ label {
 .input-score:hover, .input-score:focus {
   font-weight: 600;
   outline-color: transparent;
-  transition-delay: .08s;
+  transition-delay: 0.08s;
 }
 
 .dice1 {
@@ -221,7 +221,7 @@ label {
 
 footer {
   bottom: 0;
-  color: #FFF;
+  color: #fff;
   left: 42%;
   margin-bottom: 5px;
   position: absolute;
