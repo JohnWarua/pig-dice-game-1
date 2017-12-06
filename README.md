@@ -2,7 +2,8 @@
 
 ### This is a Dice Game called Pig
 
-You can read more about this game on [wikipedia](https://en.wikipedia.org/wiki/Pig_dice_game)
+You can read more about this game on
+[wikipedia](https://en.wikipedia.org/wiki/Pig_dice_game)
 
 ![Screenshot of dice game](https://github.com/Asjas/pig-dice-game/blob/master/public/dice_background.webp "Pig (Dice Game)")
 
@@ -16,7 +17,10 @@ You can read more about this game on [wikipedia](https://en.wikipedia.org/wiki/P
 
 This variation is the same as Pig, except:
 
-* Two standard dice are rolled. If neither shows a 1, their sum is added to the turn total.
+* Two standard dice are rolled. If neither shows a 1, their sum is added to the
+  turn total.
 * If a single 1 is rolled, the player scores nothing and the turn ends.
 * If two 1s are rolled, the player’s entire score is lost, and the turn ends.
-* If a double is rolled, the point total is added to the turn total as with any roll but the player is obligated to roll again (possible sub-variation of the two-dice game)
+* If a double is rolled, the point total is added to the turn total as with any
+  roll but the player is obligated to roll again (possible sub-variation of the
+  two-dice game)
