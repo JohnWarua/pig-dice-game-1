@@ -7,6 +7,7 @@ let rollDice1;
 let rollDice2;
 let rolledDouble;
 
+
 /*
   The nextPlayer function does the following.
     * It resets the turn score of the current player.
@@ -148,3 +149,8 @@ document.getElementById('winning-score').addEventListener('change', () => {
     winningScore = Number(document.getElementById('winning-score').value);
   }
 });
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> development
