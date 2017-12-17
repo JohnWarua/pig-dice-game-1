@@ -11,6 +11,7 @@ You can read more about this game on [wikipedia](https://en.wikipedia.org/wiki/P
 * HTML
 * SCSS
 * JavaScript
+* Ionicons Icon Font Pack
 
 ### Two-Dice Pig
 
