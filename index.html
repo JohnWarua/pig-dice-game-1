@@ -1,114 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="description" content="This is a Dice Game called Pig" />
+    <meta name="author" content="A-J Roos" />
 
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="This is a Dice Game called PIG">
-  <meta name="author" content="A-J Roos">
+    <title>Pig Dice Game</title>
 
-  <title>Pig Dice Game</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/favicons/manifest.json" />
+    <meta
+      name="msapplication-config"
+      content="/static/favicons/browserconfig.xml"
+    />
+    <link
+      rel="mask-icon"
+      href="/static/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Favicon Icons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/public/favicons/manifest.json">
-  <meta name="msapplication-config" content="/public/favicons/browserconfig.xml">
-  <link rel="mask-icon" href="/public/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="theme-color" content="#ffffff">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="static/ionicons.min.css" type="text/css" />
+    <link rel="stylesheet" href="public/css/style.min.css" type="text/css" />
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </head>
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:image" content="/public/og-image.jpg">
-  <meta property="og:image:height" content="489">
-  <meta property="og:image:width" content="933">
-  <meta property="og:title" content="Dice Game (Pig)">
-  <meta property="og:description" content="This is a &quot;Random Dice&quot; game called Pig.">
-  <meta property="og:url" content="https://pig-dice-game.netlify.com/">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="https://pig-dice-game.netlify.com">
-  <meta name="twitter:title" content="Dice Game (Pig)">
-  <meta name="twitter:description" content="This is a &quot;Random Dice&quot; game called Pig.">
-  <meta name="twitter:site" content="@asjasroos">
-  <meta name="twitter:creator" content="@asjasroos">
-
-  <!-- Preload CSS Polyfill -->
-  <script async src="public/js/preload/loadCSS.js" type="application/javascript"></script>
-
-  <!-- Main CSS Style -->
-  <link rel="preload" href="public/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.rel='stylesheet'"
-    type="text/css">
-  <noscript>
-    <link rel="stylesheet" href="public/css/style.min.css" type="text/css">
-  </noscript>
-
-  <!-- Google font -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js">
-    </script>
-  <![endif]-->
-</head>
-
-<body>
-  <!-- Main HTML Markup -->
-  <div class="wrapper clearfix">
-    <div class="player-0-panel active">
-      <div class="player-name" id="name-0">Player 1</div>
-      <div class="player-score" id="score-0">43</div>
-      <div class="player-current-box">
-        <div class="player-current-label">Current</div>
-        <div class="player-current-score" id="current-0">11</div>
+  <body>
+    <main class="wrapper clearfix">
+      <div class="player-0-panel active">
+        <div class="player-name" id="name-0">Player 1</div>
+        <div class="player-score" id="score-0">43</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-0">11</div>
+        </div>
       </div>
-    </div>
-    <div class="player-1-panel">
-      <div class="player-name" id="name-1">Player 2</div>
-      <div class="player-score" id="score-1">72</div>
-      <div class="player-current-box">
-        <div class="player-current-label">Current</div>
-        <div class="player-current-score" id="current-1">0</div>
+      <div class="player-1-panel">
+        <div class="player-name" id="name-1">Player 2</div>
+        <div class="player-score" id="score-1">72</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score" id="current-1">0</div>
+        </div>
       </div>
-    </div>
-    <button class="btn-new">
-      <i class="ion-ios-game-controller-b-outline"></i>New game</button>
-    <button class="btn-roll">
-      <i class="ion-ios-loop"></i>Roll dice</button>
-    <button class="btn-hold">
-      <i class="ion-ios-download-outline"></i>Hold</button>
-    <label for="winning-score">Winning Score</label>
-    <input class="input-score" id="winning-score" type="number" min="1" max="3000">
-    <img src="public/images/dice-1.png" alt="Dice" class="dice1">
-    <img src="public/images/dice-2.png" alt="Dice" class="dice2">
-  </div>
+      <button class="btn-new">
+        <i class="ion-ios-game-controller-b-outline"></i>New game
+      </button>
+      <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+      <button class="btn-hold">
+        <i class="ion-ios-download-outline"></i>Hold
+      </button>
+      <button class="btn-rules">
+        <i class="ion-ios-book-outline"></i>Rules
+      </button>
+      <label for="winning-score">Winning Score</label>
+      <input
+        class="input-score"
+        id="winning-score"
+        type="number"
+        min="1"
+        max="3000"
+      />
+      <img src="static/dice-1.png" alt="Dice" class="dice1" />
+      <img src="static/dice-2.png" alt="Dice" class="dice2" />
+    </main>
+    <dialog class="modal">
+      <section class="modal-content">
+        <span class="modal-close">&times;</span>
+        <p>
+          Two standard dice are rolled. If neither shows a 1, their sum is added
+          to the turn total.
+        </p>
+        <p>
+          If a single 1 is rolled, the player scores nothing and the turn ends.
+        </p>
+        <p>
+          If two 1s are rolled, the player’s entire score is lost, and the turn
+          ends.
+        </p>
+        <p>
+          If a double is rolled, the point total is added to the turn total as
+          with any roll but the player is obligated to roll again.
+        </p>
+        <p>
+          If a player chooses to "hold", their turn total is added to their
+          score, and it becomes the next player's turn.
+        </p>
+        <p>The first player to reach the score wins.</p>
+      </section>
+    </dialog>
+    <footer><p>Copyright © A-J Roos 2018. All Rights Reserved.</p></footer>
 
-  <!-- ionicons icon pack -->
-  <link rel="preload" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"
-    onerror="this.rel='stylesheet'" type="text/css">
-  <noscript>
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css">
-  </noscript>
-
-  <!-- JavaScript file -->
-  <script async src="public/js/app.min.js" type="application/javascript"></script>
-  <footer>
-    <p>Copyright © A-J Roos
-      <span id="year"></span>. All Rights Reserved.</p>
-  </footer>
-
-  <!-- Set year on website load -->
-  <script>
-    (function setYear() {
-      let today = new Date();
-      let year = today.getFullYear();
-
-      document.getElementById("year").textContent = year;
-    })();
-  </script>
-</body>
-
+    <script
+      src="https://browser.sentry-cdn.com/4.4.0/bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="public/js/app.min.js"></script>
+  </body>
 </html>

@@ -1,7 +1,4 @@
-/**********************************************
-*** IMPORT REBOOT CSS AND VARIABLES
-**********************************************/
-@import "reboot", "variables";
+@import "variables";
 
 /**********************************************
 *** GENERAL
@@ -18,7 +15,7 @@ body {
       rgba(62, 20, 20, 0.4),
       rgba(62, 20, 20, 0.4)
     ),
-    url(../images/back.jpg);
+    url(../../static/back.jpg);
   background-position: center;
   background-size: cover;
   color: #555;
@@ -38,13 +35,16 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 1000px;
+
+  @media (max-width: 1130px) {
+    width: 780px;
+  }
 }
 
 .player-0-panel,
 .player-1-panel {
   float: left;
   height: 600px;
-  padding: 100px;
   width: 50%;
 }
 
@@ -81,7 +81,7 @@ body {
       font-size: 47px;
       position: absolute;
       right: 10px;
-      top: -7px;
+      top: -20px;
     }
   }
 }
@@ -94,14 +94,12 @@ body {
   text-align: center;
   width: 40%;
 }
-
 .player-current-label {
   color: #222;
   font-size: 12px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-
 .player-current-score {
   font-size: 30px;
 }
@@ -120,11 +118,12 @@ button {
   transform: translateX(-50%);
   transition: background-color 0.3s, color 0.3s;
   width: 200px;
+
   &:hover {
     font-weight: 600;
   }
   &:hover i {
-    margin-right: 20px;
+    transform: translateX(-7px);
   }
   &:focus {
     outline: none;
@@ -143,7 +142,7 @@ i {
 }
 
 .btn-new {
-  top: 45px;
+  top: 55px;
 }
 
 .btn-roll {
@@ -152,6 +151,10 @@ i {
 
 .btn-hold {
   top: 490px;
+}
+
+.btn-rules {
+  top: 540px;
 }
 
 label {
@@ -207,10 +210,44 @@ label {
   }
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 footer {
   bottom: 0;
   color: #fff;
-  left: 42%;
+  width: 100%;
+  text-align: center;
   margin-bottom: 5px;
   position: absolute;
 }
