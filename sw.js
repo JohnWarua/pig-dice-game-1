@@ -9,6 +9,10 @@ const filesToCache = [
   "./public/css/style.min.css.map",
   "./public/js/app.min.js",
   "./public/js/app.min.js.map",
+  "./fonts/ionicons.ttf",
+  "./fonts/ionicons.ttf?v=2.0.1",
+  "./fonts/ionicons.woff",
+  "./fonts/ionicons.woff?v=2.0.1",
   "./static/dice-1.png",
   "./static/dice-2.png",
   "./static/dice-3.png",
@@ -16,6 +20,7 @@ const filesToCache = [
   "./static/dice-5.png",
   "./static/dice-6.png",
   "./static/back.jpg",
+  "./static/ionicons.min.css",
   "./static/favicons/android-chrome-192x192.png",
   "./static/favicons/android-chrome-256x256.png",
   "./static/favicons/apple-touch-icon.png",
@@ -25,7 +30,7 @@ const filesToCache = [
   "./static/favicons/favicon.ico",
   "./static/favicons/manifest.json",
   "./static/favicons/mstile-150x150.png",
-  "./static/favicons/safari-pinned-tab.svg",
+  "./static/favicons/safari-pinned-tab.svg"
 ];
 
 /**
